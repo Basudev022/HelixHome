@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap");
+
+/* ================================
+   GLOBAL RESET
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+
+  background: #07111a;
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ================================
+   HEADINGS
+================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* ================================
+   LINKS
+================================ */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+button {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+/* ================================
+   FORM ELEMENTS
+================================ */
+
+input,
+textarea,
+select {
+  font-family: "Poppins", sans-serif;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+/* ================================
+   IMAGES
+================================ */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ================================
+   LISTS
+================================ */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ================================
+   SELECTION
+================================ */
+
+::selection {
+  background: #d99a24;
+  color: #ffffff;
+}
+
+/* ================================
+   SCROLLBAR
+================================ */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07111a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9b6d1c;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d99a24;
+}

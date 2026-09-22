@@ -1,0 +1,584 @@
+/* =========================================================
+   ABOUT PAGE
+========================================================= */
+
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8f5ef;
+  color: #101b27;
+  overflow-x: hidden;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 265px;
+  margin-top: 86px;
+  overflow: hidden;
+}
+
+.about-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about-hero-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 55%;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 9, 13, 0.82) 0%,
+    rgba(3, 9, 13, 0.58) 35%,
+    rgba(3, 9, 13, 0.18) 75%,
+    rgba(3, 9, 13, 0.08) 100%
+  );
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1340px;
+
+  height: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 25px 0;
+  box-sizing: border-box;
+}
+
+.about-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 22px;
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.about-breadcrumb span:nth-child(2),
+.about-breadcrumb span:nth-child(4) {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.about-hero-content h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 66px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.2px;
+}
+
+.about-hero-content p {
+  margin: 17px 0 0;
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   JOURNEY SECTION
+========================================================= */
+
+.about-journey {
+  position: relative;
+
+  width: 100%;
+  max-width: 1340px;
+
+  min-height: 565px;
+
+  margin: 0 auto;
+
+  padding: 55px 0 45px;
+
+  display: grid;
+  grid-template-columns: 56% 44%;
+  gap: 20px;
+
+  box-sizing: border-box;
+}
+
+/* LEFT */
+
+.about-journey-content {
+  padding-right: 10px;
+}
+
+.about-label-row {
+  display: flex;
+  align-items: center;
+}
+
+.about-label-row span {
+  color: #a86f13;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+}
+
+.about-gold-line {
+  width: 100%;
+  height: 2px;
+
+  margin-top: 13px;
+  margin-bottom: 14px;
+
+  background: #b77b18;
+}
+
+.about-journey-content h2 {
+  margin: 0 0 18px;
+
+  color: #111c28;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 53px;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.about-journey-content h2 span {
+  color: #ad7316;
+}
+
+.about-journey-content > p {
+  max-width: 700px;
+  width: 100%;
+
+  margin: 0;
+
+  color: #26313b;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.journey-second-text {
+  margin-top: 13px !important;
+}
+
+/* =========================================================
+   VALUES
+========================================================= */
+
+.about-values {
+  width: 100%;
+
+  margin-top: 25px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.about-value {
+  min-width: 0;
+}
+
+.about-value-icon {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #b87912;
+  color: #ffffff;
+
+  margin-bottom: 8px;
+}
+
+.about-value h3 {
+  margin: 0 0 5px;
+
+  color: #101b27;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.about-value p {
+  margin: 0;
+
+  color: #26313b;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   RIGHT IMAGE
+========================================================= */
+
+.about-journey-image {
+  position: relative;
+
+  width: 100%;
+  height: 525px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  padding-top: 5px;
+}
+
+.about-image-frame {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 88%;
+  height: 70%;
+
+  background: #eadbc1;
+}
+
+.about-journey-image > img {
+  position: relative;
+  z-index: 2;
+
+  width: 88%;
+  height: 510px;
+
+  margin-top: 25px;
+  margin-right: 37px;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  box-shadow: none;
+}
+
+/* =========================================================
+   QUOTE CARD
+========================================================= */
+
+.about-quote {
+  position: absolute;
+
+  z-index: 5;
+
+  right: -5px;
+  bottom: 15px;
+
+  width: 290px;
+  min-height: 142px;
+
+  padding: 25px 30px;
+
+  box-sizing: border-box;
+
+  background: #b57816;
+
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-quote p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.quote-line {
+  width: 46px;
+  height: 2px;
+
+  margin-top: 18px;
+
+  background: #ffffff;
+}
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.about-statistics {
+  width: 100%;
+
+  min-height: 115px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  background: #f1ece2;
+
+  border-top: 1px solid rgba(151, 115, 57, 0.08);
+
+  box-sizing: border-box;
+}
+
+.about-stat {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.about-stat:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  right: 0;
+  top: 28px;
+
+  width: 1px;
+  height: 65px;
+
+  background: rgba(125, 102, 65, 0.32);
+}
+
+.about-stat h3 {
+  margin: 0;
+
+  color: #a96f13;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.about-stat p {
+  margin: 8px 0 0;
+
+  color: #18232e;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1400px) {
+  .about-hero-content,
+  .about-journey {
+    max-width: calc(100% - 120px);
+  }
+
+  .about-journey {
+    grid-template-columns: 55% 45%;
+  }
+
+  .about-journey-content h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-hero-content,
+  .about-journey {
+    max-width: calc(100% - 60px);
+  }
+
+  .about-hero {
+    height: 300px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 55px;
+  }
+
+  .about-journey {
+    grid-template-columns: 1fr;
+    padding-bottom: 55px;
+  }
+
+  .about-journey-content {
+    padding-right: 0;
+  }
+
+  .about-journey-image {
+    height: 500px;
+    margin-top: 20px;
+  }
+
+  .about-values {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-hero {
+    height: 330px;
+    margin-top: 75px;
+  }
+
+  .about-hero-content,
+  .about-journey {
+    max-width: calc(100% - 36px);
+  }
+
+  .about-breadcrumb {
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 48px;
+  }
+
+  .about-hero-content p {
+    font-size: 14px;
+  }
+
+  .about-hero-content p br {
+    display: none;
+  }
+
+  .about-journey {
+    padding-top: 42px;
+  }
+
+  .about-journey-content h2 {
+    font-size: 42px;
+  }
+
+  .about-journey-content > p {
+    font-size: 14px;
+  }
+
+  .about-values {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .about-journey-image {
+    height: 430px;
+  }
+
+  .about-journey-image > img {
+    width: 88%;
+    height: 390px;
+    margin-right: 20px;
+  }
+
+  .about-image-frame {
+    width: 90%;
+    height: 90%;
+  }
+
+  .about-quote {
+    right: 0;
+    bottom: 5px;
+    width: 260px;
+  }
+
+  .about-statistics {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 0;
+  }
+
+  .about-stat {
+    min-height: 100px;
+  }
+
+  .about-stat:nth-child(2)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-hero-content,
+  .about-journey {
+    max-width: calc(100% - 28px);
+  }
+
+  .about-hero-content h1 {
+    font-size: 42px;
+  }
+
+  .about-journey-content h2 {
+    font-size: 36px;
+  }
+
+  .about-journey-image {
+    height: 390px;
+  }
+
+  .about-journey-image > img {
+    height: 350px;
+  }
+
+  .about-quote {
+    width: 235px;
+    padding: 20px;
+  }
+
+  .about-quote p {
+    font-size: 19px;
+  }
+
+  .about-statistics {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stat::after {
+    display: none !important;
+  }
+}

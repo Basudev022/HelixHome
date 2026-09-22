@@ -1,0 +1,319 @@
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+/* =========================================================
+   EXACT CITY IMAGE BACKGROUND
+   ========================================================= */
+
+.hero-background {
+  position: absolute;
+  top: 20px;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  z-index: 1;
+
+  background: #ffffff;
+}
+
+/*
+ * This wrapper is animated by JavaScript.
+ */
+
+.hero-background-image {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  transform-origin: center center;
+
+  will-change: transform;
+
+  backface-visibility: hidden;
+
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+/*
+ * The actual supplied skyline image.
+ */
+
+.hero-background-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center bottom;
+
+  user-select: none;
+
+  pointer-events: none;
+
+  -webkit-user-drag: none;
+}
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.hero-section .hero-content {
+  position: relative;
+
+  width: 100%;
+
+  z-index: 10;
+}
+
+/* =========================================================
+   HERO STATS
+   ========================================================= */
+
+.hero-section .hero-stats {
+  position: absolute;
+
+  z-index: 11;
+}
+
+/* =========================================================
+   HEADER OPENING ANIMATION
+   ========================================================= */
+
+.home-header {
+  animation: headerDropIn 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.05s both;
+}
+
+@keyframes headerDropIn {
+  from {
+    opacity: 0;
+
+    transform: translateY(-35px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   SMALL TITLE
+   ========================================================= */
+
+.hero-animate-small-title {
+  opacity: 0;
+
+  transform: translateY(45px);
+
+  animation: heroSmallTitleIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.65s forwards;
+}
+
+@keyframes heroSmallTitleIn {
+  from {
+    opacity: 0;
+
+    transform: translateY(45px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.hero-animate-heading {
+  opacity: 0;
+
+  transform: translateY(55px);
+
+  animation: heroHeadingIn 1s cubic-bezier(0.22, 1, 0.36, 1) 0.9s forwards;
+}
+
+@keyframes heroHeadingIn {
+  from {
+    opacity: 0;
+
+    transform: translateY(55px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+.hero-animate-divider {
+  opacity: 0;
+
+  transform: translateY(30px) scaleX(0.5);
+
+  animation: heroDividerIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) 1.45s forwards;
+}
+
+@keyframes heroDividerIn {
+  from {
+    opacity: 0;
+
+    transform: translateY(30px) scaleX(0.5);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0) scaleX(1);
+  }
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.hero-animate-description {
+  opacity: 0;
+
+  transform: translateY(35px);
+
+  animation: heroDescriptionIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) 1.65s
+    forwards;
+}
+
+@keyframes heroDescriptionIn {
+  from {
+    opacity: 0;
+
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   STATISTICS
+   ========================================================= */
+
+.hero-animate-stats {
+  opacity: 0;
+
+  transform: translate(-50%, 55px);
+
+  animation: heroStatsIn 1s cubic-bezier(0.22, 1, 0.36, 1) 2s forwards;
+}
+
+@keyframes heroStatsIn {
+  from {
+    opacity: 0;
+
+    transform: translate(-50%, 55px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translate(-50%, 0);
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .home-header,
+  .hero-animate-small-title,
+  .hero-animate-heading,
+  .hero-animate-divider,
+  .hero-animate-description,
+  .hero-animate-stats {
+    animation: none;
+
+    opacity: 1;
+
+    transform: none;
+  }
+
+  .hero-background-image {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .hero-background-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center bottom;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .hero-background-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center bottom;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 450px) {
+  .hero-background-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center bottom;
+  }
+}
