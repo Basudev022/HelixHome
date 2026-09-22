@@ -27,7 +27,7 @@ function ContactSection() {
 
           <div className="contact-detail">
             <MapPin size={16} />
-            <span>Bhubaneswar, Odisha - 751010</span>
+            <span>Bhubaneswar, Odisha - 752101</span>
           </div>
         </div>
       </div>

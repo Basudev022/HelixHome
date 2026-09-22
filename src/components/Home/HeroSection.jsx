@@ -163,7 +163,7 @@ function HeroSection({ onGetInTouch }) {
           <div className="hero-stat">
             <Building2 className="hero-stat-icon" size={30} strokeWidth={1.5} />
 
-            <h3>500+</h3>
+            <h3>0+</h3>
 
             <p>Properties Sold</p>
           </div>
@@ -171,7 +171,7 @@ function HeroSection({ onGetInTouch }) {
           <div className="hero-stat">
             <Award className="hero-stat-icon" size={30} strokeWidth={1.5} />
 
-            <h3>10+</h3>
+            <h3>0+</h3>
 
             <p>Years Experience</p>
           </div>
@@ -179,7 +179,7 @@ function HeroSection({ onGetInTouch }) {
           <div className="hero-stat">
             <Users className="hero-stat-icon" size={30} strokeWidth={1.5} />
 
-            <h3>2,000+</h3>
+            <h3>0+</h3>
 
             <p>Happy Clients</p>
           </div>

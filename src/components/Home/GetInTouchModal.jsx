@@ -496,11 +496,10 @@ ${message}
 Thank you.`;
 
     /* =====================================================
-       WHATSAPP NUMBER
-       6370796992 → India (+91)
+      
     ===================================================== */
 
-    const whatsappNumber = "916370796992";
+    const whatsappNumber = "919776189410";
 
     const whatsappUrl =
       `https://wa.me/${whatsappNumber}?text=` +
